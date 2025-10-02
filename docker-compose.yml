@@ -2,6 +2,8 @@ version: "3.9"
 
 services:
   todo-app:
+    build:
+      context: .  # build from the current directory's Dockerfile.
     image: react-todo:v1  # use the image we built
     container_name: react-todo-container
     ports:
